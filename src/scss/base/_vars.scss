@@ -1,0 +1,35 @@
+// -------------------------------------- size start
+$laptop-size: 1199px;
+$tablet-size: 959px;
+$mobile-size: 599px;
+// -------------------------------------- size end
+// -------------------------------------- color start
+	$main-bg: #291b46;
+    $second-bg: #ffffff;
+    $third-bg: #75a2bd;
+    $fourth-bg: blue;
+
+    $main-text-color: #ffffff;
+    $second-text-color: orange;
+	
+// .dark {
+//     $main-bg: #252526;
+//     $main-text-color: #ffffff;
+// }
+
+// -------------------------------------- color end
+// -------------------------------------- font start
+$main-font-family: "Arial";
+// $second-font-family: "Arial";
+// $third-font-family: "Arial";
+
+$main-font-size-rem: calc(6px + 10 * (100vw / 1920));
+$main-font-size: 1.25rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2.25rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.75rem;
+$h6-font-size: 1.5rem;
+
+// -------------------------------------- font end

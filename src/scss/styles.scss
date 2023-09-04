@@ -1,0 +1,130 @@
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/utils";
+@import "./base/media";
+
+
+
+// BASE
+
+
+@import "./blocks/*.scss";
+
+// BLOCKS
+
+
+.wrapper {
+}
+.main {
+}
+
+.game {
+    &__inner {
+        padding: 20px 0 0 0;
+        background-color: $second-bg;
+        display: flex;
+    }
+    &__column {
+        padding: 10px;
+        margin: 10px;
+        text-shadow: 1px 1px 1px black;
+        border: 4px solid $main-bg;
+        border-radius: 15px;
+        background-color: $third-bg;
+    }
+}
+
+.left_column {
+    // flex-grow: 1;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        list-style-type: none;
+    }
+    &__item {
+        display: flex;
+        color: $second-text-color;
+        &:nth-child(5n+1) {
+            color: $main-text-color;
+        }
+    }
+    &__number {
+        width: 30px;
+        text-align: center;
+        margin-right: 4px;
+    }
+    &__money {
+        &::before {
+            content: "◆";
+            margin: 0 10px 0 0px;
+            color: $main-text-color;
+        }
+    }
+}
+
+.right_column {
+    flex-grow: 4;
+}
+
+.content_row {
+}
+
+.info_block {
+    padding: 25px 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: $main-bg;
+    background-color: $third-bg;
+    border: 2px solid $second-bg;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px black;
+    & span {
+        color: red;
+    }
+}
+
+.questions_block {
+    padding: 25px 10px;
+    margin: 20px 0;
+    background-color: $fourth-bg;
+    border: 2px solid $second-bg;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px black;
+    
+    &__question {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+.answers_block {
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.answer_wrap {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+    background-color: $fourth-bg;
+    border: 2px solid $second-bg;
+    border-radius: 100px;
+    box-shadow: inset 0 0 20px black;
+    &:hover {
+        background-color: $second-text-color;
+        cursor: pointer;
+    }
+    &__letter {
+        padding-left: 10px;
+        &::before {
+            content: "◆";
+        }
+    }
+    &__answer {
+        
+    }
+}
+
